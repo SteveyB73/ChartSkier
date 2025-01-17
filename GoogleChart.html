@@ -1,34 +1,63 @@
-<script>
-  google.charts.load('current', { packages: ['corechart'] });
-  google.charts.setOnLoadCallback(drawChart);
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+      #chart_div {
+        position: relative;
+        width: 800px;
+        height: 500px;
+      }
 
-  let chart, chartLayout;
+      #skier {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-image: url('skier.png'); /* Sprite image */
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: transform 0.2s linear;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart_div">
+      <div id="skier"></div>
+    </div>
 
-  function drawChart() {
-    const data = google.visualization.arrayToDataTable([
-      ['X', 'Y'],
-      [0, 0],
-      [1, 2],
-      [2, 3],
-      [3, 2.5],
-      [4, 4],
-      [5, 5],
-      [6, 3]
-    ]);
+    <script>
+      google.charts.load('current', { packages: ['corechart'] });
+      google.charts.setOnLoadCallback(drawChart);
 
-    const options = {
-      title: 'Skier on a Line Chart',
-      curveType: 'function',
-      legend: { position: 'bottom' }
-    };
+      let chart, chartLayout;
 
-    chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+      function drawChart() {
+        const data = google.visualization.arrayToDataTable([
+          ['X', 'Y'],
+          [0, 0],
+          [1, 2],
+          [2, 3],
+          [3, 2.5],
+          [4, 4],
+          [5, 5],
+          [6, 3]
+        ]);
 
-    google.visualization.events.addListener(chart, 'ready', () => {
-      chartLayout = chart.getChartLayoutInterface();
-      animateSkier(data);
-    });
+        const options = {
+          title: 'Skier on a Line Chart',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
 
-    chart.draw(data, options);
-  }
-</script>
+        chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+        google.visualization.events.addListener(chart, 'ready', () => {
+          chartLayout = chart.getChartLayoutInterface();
+          <script src="js/skier-animation.js"></script>
+        });
+
+        chart.draw(data, options);
+      }
+    </script>
+  </body>
+</html>
