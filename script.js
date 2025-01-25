@@ -5,8 +5,8 @@ const skier = document.getElementById('skier'); // The skier image element
 const ctx = canvas.getContext('2d'); // The 2D drawing context for the canvas
 
 // Set the size of the canvas
-canvas.width = 300; // Canvas width in pixels
-canvas.height = 200; // Canvas height in pixels
+canvas.width = 600; // Canvas width in pixels
+canvas.height = 400; // Canvas height in pixels
 
 
 
