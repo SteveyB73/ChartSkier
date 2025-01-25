@@ -5,8 +5,24 @@ const skier = document.getElementById('skier'); // The skier image element
 const ctx = canvas.getContext('2d'); // The 2D drawing context for the canvas
 
 // Set the size of the canvas
-canvas.width = 600; // Canvas width in pixels
-canvas.height = 400; // Canvas height in pixels
+canvas.width = 300; // Canvas width in pixels
+canvas.height = 200; // Canvas height in pixels
+
+
+
+function setInitialCanvasSize() {
+  const containerWidth = Math.min(window.innerWidth * 0.9, 350); // Max width of 350px
+  const containerHeight = Math.min(window.innerHeight * 0.5, 350); // Max height of 350px
+
+  canvas.width = containerWidth; // Set canvas width
+  canvas.height = containerHeight; // Set canvas height
+}
+
+// Add a lkistener to resize rhe canvas
+document.addEventListener('DOMContentLoaded, () => {
+    setInitialCanvasSize();
+})
+
 
 // Add an event listener to the form to handle user submissions
 form.addEventListener('submit', (e) => {
@@ -96,3 +112,5 @@ function animateSkier(data) {
 
   moveSkier(); // Start the skier animation
 }
+
+
