@@ -12,8 +12,8 @@ canvas.height = 200; // Canvas height in pixels
 
 function setInitialCanvasSize() {
   // Define the size of the container
-  const containerWidth = Math.min(window.innerWidth * 0.9, 800); // Max width of 800px
-  const containerHeight = Math.min(window.innerHeight * 0.5, 500); // Max height of 500px
+  const containerWidth = Math.min(window.innerWidth * 0.9, 600); // Max width of 800px
+  const containerHeight = Math.min(window.innerHeight * 0.5, 400); // Max height of 500px
 
   // Set the intrinsic size of the canvas
   canvas.width = containerWidth;
