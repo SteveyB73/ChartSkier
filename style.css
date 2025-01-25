@@ -1,0 +1,73 @@
+/* Base styling for the body of the page */
+body {
+  margin: 0; /* Removes default browser margins for a clean layout */
+  font-family: Arial, sans-serif; /* Sets a clean, readable font */
+  background-color: #f0f8ff; /* Light snowy white background for a wintry feel */
+  color: #333; /* Dark grey text for good contrast */
+  text-align: center; /* Centres text on the page */
+}
+
+/* Styling for the container that holds all content */
+.container {
+  max-width: 600px; /* Limits the container width for readability */
+  margin: 50px auto; /* Centres the container horizontally and adds vertical spacing */
+  padding: 20px; /* Adds internal padding around the content */
+  border-radius: 10px; /* Rounds the corners of the container */
+  background: white; /* Sets the background of the container to white */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for a lifted appearance */
+}
+
+/* Styling for the main heading */
+h1 {
+  color: #1e90ff; /* Icy blue colour to match the wintry theme */
+}
+
+/* Styling for the form that takes user input */
+form {
+  margin-bottom: 20px; /* Adds space below the form for separation */
+}
+
+/* Styling for the input field */
+input {
+  width: 70%; /* Sets the input field width to 70% of the container */
+  padding: 10px; /* Adds internal padding for better spacing inside the input */
+  border: 2px solid #1e90ff; /* Adds a blue border for consistency with the theme */
+  border-radius: 5px; /* Rounds the corners of the input field */
+  font-size: 16px; /* Sets a readable font size for the input */
+}
+
+/* Styling for the submit button */
+button {
+  padding: 10px 20px; /* Adds padding for a larger, clickable button */
+  background: #1e90ff; /* Sets the button's background to icy blue */
+  color: white; /* Sets the text colour to white for contrast */
+  border: none; /* Removes the default border for a cleaner look */
+  border-radius: 5px; /* Rounds the button corners */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate interactivity */
+  font-size: 16px; /* Sets a readable font size for the button text */
+}
+
+/* Styling for the button when hovered over */
+button:hover {
+  background: #4682b4; /* Changes the button's background to a darker blue on hover */
+}
+
+/* Styling for the canvas where the graph is drawn */
+canvas {
+  display: block; /* Makes the canvas a block-level element (centres with margin auto) */
+  margin: 20px auto; /* Centres the canvas and adds vertical spacing */
+  border: 2px solid #1e90ff; /* Adds a blue border around the canvas */
+  border-radius: 5px; /* Rounds the corners of the canvas */
+  width: 600px; /* Fixes the canvas width to ensure consistent sizing */
+  height: 400px; /* Fixes the canvas height to ensure consistent sizing */
+  position: relative; /* Allows for positioning child elements like the skier */
+}
+
+/* Styling for the skier image */
+#skier {
+  position: absolute; /* Positions the skier relative to the canvas */
+  width: 30px; /* Sets the skier's width to a small size */
+  height: 30px; /* Sets the skier's height to a small size */
+  display: none; /* Initially hides the skier until the animation starts */
+  z-index: 10; /* Places the skier above other elements like the canvas */
+}
