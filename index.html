@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Sets the character encoding to UTF-8 for proper text rendering -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensures the page is responsive and scales correctly on different devices -->
+  <title>Skier Graph Animation</title>
+  <!-- The title of the webpage that will appear in the browser tab -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Links to the external CSS file for styling -->
+</head>
+<body>
+  <!-- Main content of the page -->
+  <div class="container">
+    <!-- A container to centre and style the content -->
+    <h1>Interactive Skier Graph</h1>
+    <!-- Page title for the application -->
+
+    <form id="dataForm">
+      <!-- A form to capture user input -->
+      <label for="dataInput">Enter comma-separated values:</label>
+      <!-- Label describing the input field -->
+      <input type="text" id="dataInput" placeholder="e.g., 10, 20, 15, 30">
+      <!-- Text input field where users can enter comma-separated values -->
+      <button type="submit">Generate Graph</button>
+      <!-- Submit button to trigger the graph generation -->
+    </form>
+
+    <canvas id="graphCanvas"></canvas>
+    <!-- The canvas element where the graph will be drawn -->
+
+    <img id="skier" src="skier.png" alt="Skier">
+    <!-- The skier image that will be animated along the graph line -->
+  </div>
+
+  <script src="script.js"></script>
+  <!-- Links to the external JavaScript file for interactivity -->
+</body>
+</html>
