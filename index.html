@@ -17,6 +17,8 @@
     <h1>Interactive Skier Graph</h1>
     <!-- Page title for the application -->
 
+    <!-- // <p id="canvasSize">Canvas Size: </p> -->
+
     <form id="dataForm">
       <!-- A form to capture user input -->
       <label for="dataInput">Enter comma-separated values:</label>
@@ -27,8 +29,9 @@
       <!-- Submit button to trigger the graph generation -->
     </form>
 
-    <canvas id="graphCanvas"></canvas>
-    <!-- The canvas element where the graph will be drawn -->
+    <div class="canvas-container">
+      <canvas id="graphCanvas"></canvas>
+    </div><!-- The canvas element where the graph will be drawn -->
 
     <img id="skier" src="skier.png" alt="Skier">
     <!-- The skier image that will be animated along the graph line -->
