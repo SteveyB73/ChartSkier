@@ -11,15 +11,24 @@ canvas.height = 200; // Canvas height in pixels
 
 
 function setInitialCanvasSize() {
-  const containerWidth = Math.min(window.innerWidth * 0.9, 350); // Max width of 350px
-  const containerHeight = Math.min(window.innerHeight * 0.5, 350); // Max height of 350px
+  // Define the size of the container
+  const containerWidth = Math.min(window.innerWidth * 0.9, 800); // Max width of 800px
+  const containerHeight = Math.min(window.innerHeight * 0.5, 500); // Max height of 500px
 
-  canvas.width = containerWidth; // Set canvas width
-  canvas.height = containerHeight; // Set canvas height
+  // Set the intrinsic size of the canvas
+  canvas.width = containerWidth;
+  canvas.height = containerHeight;
+
+  // Set the display size of the canvas to match the intrinsic size
+  canvas.style.width = `${containerWidth}px`;
+  canvas.style.height = `${containerHeight}px`;
+
+  // Update the displayed canvas size
+  //updateCanvasSize();
 }
 
 // Add a lkistener to resize rhe canvas
-document.addEventListener('DOMContentLoaded, () => {
+document.addEventListener('DOMContentLoaded', () => {
     setInitialCanvasSize();
 })
 
@@ -113,4 +122,7 @@ function animateSkier(data) {
   moveSkier(); // Start the skier animation
 }
 
-
+//function updateCanvasSize() {
+//  const canvasSizeElement = document.getElementById('canvasSize');
+//  canvasSizeElement.textContent = `Canvas Size: ${canvas.width}px x ${canvas.height}px and ${window.innerWidth}px x ${window.innerHeight}px`;
+//}
