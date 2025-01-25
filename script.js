@@ -5,15 +5,15 @@ const skier = document.getElementById('skier'); // The skier image element
 const ctx = canvas.getContext('2d'); // The 2D drawing context for the canvas
 
 // Set the size of the canvas
-canvas.width = 600; // Canvas width in pixels
-canvas.height = 400; // Canvas height in pixels
+canvas.width = 300; // Canvas width in pixels
+canvas.height = 200; // Canvas height in pixels
 
 
 
 function setInitialCanvasSize() {
   // Define the size of the container
-  const containerWidth = Math.min(window.innerWidth * 0.9, 600); // Max width of 600px
-  const containerHeight = Math.min(window.innerHeight * 0.5, 400); // Max height of 400px
+  const containerWidth = Math.min(window.innerWidth * 0.9, 300); // Max width of 300px
+  const containerHeight = Math.min(window.innerHeight * 0.5, 200); // Max height of 200px
 
   // Set the intrinsic size of the canvas
   canvas.width = containerWidth;
