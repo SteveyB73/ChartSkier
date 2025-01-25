@@ -71,3 +71,10 @@ canvas {
   display: none; /* Initially hides the skier until the animation starts */
   z-index: 10; /* Places the skier above other elements like the canvas */
 }
+
+/*canvas {
+/*border: 2px dashed red; /* Debugging: show the canvas boundaries */
+/*}
+/*body, .canvas-container {
+/*border: 1px dashed blue; /* Debugging: show the container /*boundaries */
+/*}
