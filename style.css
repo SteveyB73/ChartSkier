@@ -58,8 +58,8 @@ canvas {
   margin: 20px auto; /* Centres the canvas and adds vertical spacing */
   border: 2px solid #1e90ff; /* Adds a blue border around the canvas */
   border-radius: 5px; /* Rounds the corners of the canvas */
-  width: 600px; /* Fixes the canvas width to ensure consistent sizing */
-  height: 400px; /* Fixes the canvas height to ensure consistent sizing */
+  width: 800px; /* Fixes the canvas width to ensure consistent sizing */
+  height: 500px; /* Fixes the canvas height to ensure consistent sizing */
   position: relative; /* Allows for positioning child elements like the skier */
 }
 
